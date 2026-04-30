@@ -27,3 +27,14 @@
 - Result: Unable to connect
 - Error code: 0x204
 - Conclusion: The VM is still running, but RDP access fails because TCP port 3389 is no longer allowed through the Network Security Group.
+
+## Fix applied
+
+- Change made: Recreated the inbound RDP rule in the Network Security Group.
+- Rule name: RDP
+- Port: TCP 3389
+- Source: Any
+- Destination: Any
+- Action: Allow
+- Result: RDP connection restored successfully.
+- Conclusion: Restoring the inbound TCP 3389 rule allowed RDP traffic back into the VM.
