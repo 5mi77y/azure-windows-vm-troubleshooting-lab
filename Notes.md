@@ -38,3 +38,11 @@
 - Action: Allow
 - Result: RDP connection restored successfully.
 - Conclusion: Restoring the inbound TCP 3389 rule allowed RDP traffic back into the VM.
+
+## Root cause
+
+The RDP connection failed because the Network Security Group no longer had an inbound rule allowing TCP traffic on port 3389.
+
+## Resolution
+
+Recreating the inbound RDP rule restored access to the Windows Server VM.
