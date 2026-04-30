@@ -1,7 +1,0 @@
-Baseline network rule:
-- Inbound rule name: RDP
-- Priority: 300
-- Port: TCP 3389
-- Source: Any
-- Destination: Any
-- Result: RDP connection works successfully
