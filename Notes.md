@@ -6,8 +6,14 @@
 - Source: Any
 - Destination: Any
 - Result: RDP connection works successfully
+## Pre-change connection test
 
-## Next test
+- VM status: Running
+- Connection method: Windows App / RDP
+- Result: Successfully connected to Windows Server
+- Conclusion: RDP access works before modifying the network security rule
+  
+- ## Next test
 
 - Delete the inbound RDP rule.
 - Attempt to reconnect using Windows App / RDP.
