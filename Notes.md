@@ -13,7 +13,7 @@
 - Result: Successfully connected to Windows Server
 - Conclusion: RDP access works before modifying the network security rule
   
-- ## Next test
+## Next test
 
 - Delete the inbound RDP rule.
 - Attempt to reconnect using Windows App / RDP.
