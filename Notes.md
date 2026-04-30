@@ -6,6 +6,7 @@
 - Source: Any
 - Destination: Any
 - Result: RDP connection works successfully
+
 ## Pre-change connection test
 
 - VM status: Running
@@ -18,3 +19,11 @@
 - Delete the inbound RDP rule.
 - Attempt to reconnect using Windows App / RDP.
 - Expected result: connection fails because TCP 3389 is no longer allowed through the network security group.
+
+## Failed connection test
+
+- Change made: Deleted the inbound RDP rule from the Network Security Group.
+- Connection method: Windows App / RDP
+- Result: Unable to connect
+- Error code: 0x204
+- Conclusion: The VM is still running, but RDP access fails because TCP port 3389 is no longer allowed through the Network Security Group.
